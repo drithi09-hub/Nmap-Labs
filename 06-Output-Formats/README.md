@@ -2,7 +2,7 @@
 
 ## Objective
 
-Learn how to save Nmap scan results in different formats for reporting, automation, and future analysis.
+
 
 By default, Nmap displays scan results only in the terminal. If you close the terminal without saving them, the results are lost. Output formats allow you to store scan results for documentation, scripting, and sharing with your team.
 
@@ -21,7 +21,6 @@ nmap -oN scan.nmap localhost
 **Use when:**
 - Saving scan reports
 - Sharing results with teammates
-- Keeping records of assessments
 
 ---
 
@@ -38,7 +37,7 @@ nmap -oX scan.xml localhost
 **Use when:**
 - Automating analysis with Python or other languages
 - Importing results into security tools
-- Building reporting pipelines
+
 
 ---
 
@@ -55,7 +54,7 @@ nmap -oG scan.gnmap localhost
 **Use when:**
 - Searching for specific ports or services
 - Working with older scripts
-- Legacy environments
+
 
 > **Note:** `-oG` is considered a legacy format. Most modern tools prefer XML.
 
